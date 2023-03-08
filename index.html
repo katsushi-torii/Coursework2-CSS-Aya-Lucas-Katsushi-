@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"><!--font-awesome-->
+  <link rel="stylesheet" href="/scss/style.scss">
 
 </head>
 <body>
@@ -38,7 +39,7 @@
       <li><a href="#about">about</a></li>
       <li><a href="#service">service</a></li>
     </ul>
-    <input type="submit" value="Get A Quote">
+    <input type="submit" value="Get A Quote"><!--atag-->
     <details>
       <summary class="fa-solid fa-bars"></summary>
       <ul>
@@ -65,7 +66,7 @@
   <main>
     <section class="about">
       <figure>
-        <img src="/img/home.img/truck.jpg" alt="truck">
+        <img src="/img/truck.jpg" alt="truck">
         <figcaption>
           <h4>25+ Years Experience</h4>
         </figcaption>
@@ -87,7 +88,7 @@
 
     <section class="choose">
       <figure>
-        <img src="/img/home.img/ship.jpg" alt="ship">
+        <img src="/img/ship.jpg" alt="ship">
       </figure>
       <article>
         <section>
@@ -122,28 +123,28 @@
       </section>
       <article>
         <figure>
-          <img src="/img/home.img/team1.jpg" alt="team1">
+          <img src="/img/team1.jpg" alt="team1">
           <figcaption>
             <h5>full name</h5>
             <small>designation</small>
           </figcaption>
         </figure>
         <figure>
-          <img src="/img/home.img/team2.jpg" alt="team2">
+          <img src="/img/team2.jpg" alt="team2">
           <figcaption>
             <h5>full name</h5>
             <small>designation</small>
           </figcaption>
         </figure>
         <figure>
-          <img src="/img/home.img/team3.jpg" alt="team3">
+          <img src="/img/team3.jpg" alt="team3">
           <figcaption>
             <h5>full name</h5>
             <small>designation</small>
           </figcaption>
         </figure>
         <figure>
-          <img src="/img/home.img/team4.jpg" alt="team4">
+          <img src="/img/team4.jpg" alt="team4">
           <figcaption>
             <h5>full name</h5>
             <small>designation</small>
@@ -159,7 +160,7 @@
       </section>
       <article>
         <figure>
-          <img src="/img/home.img/blog1.jpg" alt="blog1">
+          <img src="/img/blog1.jpg" alt="blog1">
           <figcaption>
             <ul>
               <li>
@@ -182,7 +183,7 @@
           </figcaption>
         </figure>
         <figure>
-          <img src="/img/home.img/blog2.jpg" alt="blog2">
+          <img src="/img/blog2.jpg" alt="blog2">
           <figcaption>
             <ul>
               <li>
@@ -210,80 +211,67 @@
   </main>
 
   <footer>
-    <section class="footer-top">
-      <section class="touch">
-        <h4>get in touch</h4>
-        <ul class="info">
-          <li>
-            <i class="fa-solid fa-location-dot"></i>
-            <address>123 Street, New York, USA</address>
-          </li>
-          <li>
-            <i class="fa-solid fa-phone"></i>
-            <a href="tel+01234567890">+012 345 67890</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <a href="mailt:info@example.com">info@example.com</a>
-          </li>
-        </ul>
-        <ul class="sns">
-          <li><a href="#" class="fa-brands fa-twitter"></a></li>
-          <li><a href="#" class="fa-brands fa-facebook-f"></a></li>
-          <li><a href="#" class="fa-brands fa-linkedin-in"></a></li>
-          <li><a href="#" class="fa-brands fa-instagram"></a></li>
-        </ul>
-      </section><!--touch-->
-      <section class="links">
-        <h4>quick links</h4>
+    <section>
+        <section class="touch">
+            <h3>Get In Touch</h3>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <address>
+                        123, Sreet, New York, USA
+                    </address>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone-flip"></i>
+                    <a href="tel:+0123456789">+012 345 6789</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:info@example.com">info@example.com</a>
+                </li>
+            </ul>
+            <section>
+                <ul>
+                    <li><a href="#" class="fa-brands fa-twitter"></a></li>
+                    <li><a href="#" class="fa-brands fa-facebook"></a></li>
+                    <li><a href="#" class="fa-brands fa-linkedin-in"></a></li>
+                    <li><a href="#" class="fa-brands fa-instagram"></a></li>
+                </ul>
+            </section>
+        </section><!--touch-->
+        <section class="link">
+            <h3>Quick Links</h3>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About us</a></li>
+               <li><a href="#">Our Services</a></li>
+               <li><a href="#">Princing Plans</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+        </section><!--link-->
+        <section class="news">
+            <h3>Newsletter</h3>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro fuga delectus. Saepe, libero enim doloremque accusamus deleniti, quam, odio atque labore ipsam a autem optio culpa necessitatibus veritatis magni. Libero totam dolore repudiandae deleniti fugiat beatae eaque ratione quia!</p>
+                <form action="thankyou.html" method="post">
+                    <input type="email" name="email" id="email" placeholder="Your Email Address">
+                    <input type="submit" value="Sign Up">
+                </form>
+            </section>
+        </section><!--news-->
+    </section>
+    <article>
+        <p>
+            &copy; <span>Your Name Website</span>. All Rights Reserved. Designed by <span>HTML</span>
+        </p>
         <ul>
-          <li>
-            <i class="fa-solid fa-angle-right"></i>
-            <a href="#">home</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-angle-right"></i>
-            <a href="#">about us</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-angle-right"></i>
-            <a href="#">our services</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-angle-right"></i>
-            <a href="#">pricing plan</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-angle-right"></i>
-            <a href="#">contact us</a>
-          </li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Therms</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Help</a></li>
         </ul>
-      </section><!--links-->
-      <section class="news">
-        <h4>newsletter</h4>
-        <article>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, doloremque similique nulla maiores obcaecati ea ratione. Officia rem voluptatem quae molestiae velit itaque recusandae expedita?
-          </p>
-          <aside>
-            <input type="email" name="email" id="email" placeholder="Your Email Address">
-            <input type="submit" value="Sign Up">
-          </aside>
-        </article>
-      </section><!--news-->
-    </section><!--footer-top-->
-    <section class="footer-bottom">
-      <p>
-        &copy;<span>Your Site Name</span>.All Rights Reserved.Designed by <span>HTML Responsive</span>
-      </p>
-      <ul>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-    </section><!--footer-bottom-->
-  </footer>
+    </article>
+</footer>
 
 </body>
 </html>
