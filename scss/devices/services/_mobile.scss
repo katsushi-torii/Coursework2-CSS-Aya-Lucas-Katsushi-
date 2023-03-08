@@ -1,0 +1,9 @@
+@media(min-width: $mobile-screen){
+
+main{
+    @include flex-column;
+    row-gap: 20vh;
+    background-color: aqua;
+}
+
+}
