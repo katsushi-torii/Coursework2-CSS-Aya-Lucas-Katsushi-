@@ -73,7 +73,20 @@
     }
   }
   aside{
-    width: 30%;
+    width: 25%;
   }
+}
+/*footer*/
+footer{
+  >article{
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    >ul{
+      column-gap: 5vh;
+    }
+
+  }
+
 }
 }
