@@ -1,9 +1,66 @@
-@media(min-width: $mobile-screen){
+@media(min-width: $mobileScreen){
 
 main{
-    @include flex-column;
-    row-gap: 20vh;
-    background-color: aqua;
+    @include columnRow(10vh);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+main h2{
+    color: $footerColor;
+}
+
+main h3{
+    color: $defaultColor;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none
+}
+
+.logistic-services{
+        @include columnRow(3vh);
+        align-items: center;
+        text-align: center;
+    > article{
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 1vh;
+        
+    }
+    > section{
+        @include columnRow(3vh);
+        > article{
+            @include columnRow(2vh);
+            align-items: center;
+            > p{
+                // border: 1px solid red;
+                width: 80%;
+            }
+        }
+
+        a{
+            color: $defaultColor;
+            border-bottom: 1px solid lightgray;
+        }
+        
+    }
+
+    aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 8vh;
+        column-gap: 3vw;
+        background-color: $defaultColor;
+        font-size: 20px;
+        p{
+            color: whitesmoke;
+        }
+    }
+
 }
 
 }
