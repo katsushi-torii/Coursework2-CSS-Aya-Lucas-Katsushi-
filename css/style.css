@@ -30,6 +30,37 @@ header > section {
   color: whitesmoke;
 }
 
-main {
-  background-color: yellow;
+img {
+  width: 15%;
+}
+
+@media (min-width: 300px) {
+  .about,
+  .about > section,
+  .left-a,
+  .right-a,
+  .left-a > figure,
+  .left-a figcaption,
+  .right-a > article,
+  .bottom-a > article .bottom-a > section,
+  .bottom-a > section > aside,
+  .bottom-a form {
+    display: flex;
+    flex-direction: column;
+  }
+  .about {
+    align-items: center;
+  }
+  .about > section {
+    width: 90%;
+  }
+  .left-a {
+    row-gap: 7vh;
+  }
+  .left-a > figure {
+    background-color: whitesmoke;
+  }
+  .left-a img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
