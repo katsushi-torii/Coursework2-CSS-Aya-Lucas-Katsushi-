@@ -63,4 +63,71 @@ a{
 
 }
 
+.quote{
+    background-color: rgb(230, 229, 229);
+    @include flex-column;
+    align-items: center;
+    > section{
+        padding-top: 5vh;
+        @include columnRow(8vh);
+        width: 80%;
+    }
+
+    article{
+        @include columnRow(4vh);
+        > blockquote{
+            @include columnRow(1vh);
+        }
+
+        > section{
+            @include columnRow(2vh)
+        }
+
+        aside{
+            @include columnRow(1vh);
+
+            > h3{
+                font-size: 24px;
+            }
+        }
+
+        small{
+            color: $footerColor;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    form{
+        background-color: $defaultColor;
+        @include columnRow(1vh);
+        align-items: center;
+        justify-content: center;
+        height: 45vh;
+    }
+
+    input{
+        width: 80%;
+        padding: 5%;
+    }
+
+    // select{
+    //     background: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right 0.75rem center/8px 10px;
+    // }
+
+    select{
+        padding: 5%;
+        width: 90%;
+    }
+
+    [type="submit"]{
+        width: 90%;
+        background-color: $footerColor;
+        border: none;
+        color: whitesmoke;
+    }
+
+}
+
+
+
 }
