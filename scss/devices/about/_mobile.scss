@@ -24,20 +24,110 @@ img {
 
      .about > section {
           width: 90%;
+          row-gap: 15vh;
      }
 
      .left-a {
           row-gap: 7vh;
+
+          > figure > img {
+               width: 100%;
+          }
+
+          figcaption {
+               background-color: $grayColor;
+               align-items: center;
+               row-gap: 3vh;
+               padding: 10%;
+
+               > figure {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 90%;
+               }
+
+               aside {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 1vh;
+               }
+
+               img {
+                    width: 5vh;
+                    height: 5vh;
+                    background-color: skyblue;
+                    border-radius: 50%;
+               }
+
+               i {
+                    color: $defaultColor;
+                    font-size: 24px;
+               }
+
+               h4 {
+                    font-size: 30px;
+                    padding: 0;
+                    margin: 0;
+               }
+
+               span {
+                    font-size: 20px;
+               }
+
+               > article {
+                    @include columnRow(2vh);
+               }
+
+               p {
+                    font-size: 18px;
+               }
+
+               a {
+                    color: $defaultColor;
+                    font-weight: 700;
+               }
+          } 
      }
 
-     .left-a > figure {
-          background-color: whitesmoke;
-     }
+     .right-a {
+          row-gap: 10vh;
 
-     .left-a img {
-          width: 100%;
-     }
+          > aside {
+               background-color: $grayColor;
+               display: flex;
+               justify-content: center;
+          }
 
+          form {
+               display: flex;
+               justify-content: center;
+               padding: 10%;
+               width: 100%;
+               height: 7vh;
+          }
+
+          input {
+               border: none;
+          }
+
+          [type=text] {
+               width: 75%;
+               padding: 5%;
+               font-size: 20px;
+          }
+
+          [type=submit] {
+               width: 15%;
+               background-color: $defaultColor;
+               font-size: 30px;
+          }
+
+          h3 {
+               font-size: 28px;
+               font-weight: 700;
+          }
+     }
 }
 
 

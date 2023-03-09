@@ -53,14 +53,92 @@ img {
   }
   .about > section {
     width: 90%;
+    row-gap: 15vh;
   }
   .left-a {
     row-gap: 7vh;
   }
-  .left-a > figure {
-    background-color: whitesmoke;
-  }
-  .left-a img {
+  .left-a > figure > img {
     width: 100%;
+  }
+  .left-a figcaption {
+    background-color: #f2f2f4;
+    align-items: center;
+    row-gap: 3vh;
+    padding: 10%;
+  }
+  .left-a figcaption > figure {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .left-a figcaption aside {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .left-a figcaption img {
+    width: 5vh;
+    height: 5vh;
+    background-color: skyblue;
+    border-radius: 50%;
+  }
+  .left-a figcaption i {
+    color: #ff4800;
+    font-size: 24px;
+  }
+  .left-a figcaption h4 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .left-a figcaption span {
+    font-size: 20px;
+  }
+  .left-a figcaption > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .left-a figcaption p {
+    font-size: 18px;
+  }
+  .left-a figcaption a {
+    color: #ff4800;
+    font-weight: 700;
+  }
+  .right-a {
+    row-gap: 10vh;
+  }
+  .right-a > aside {
+    background-color: #f2f2f4;
+    display: flex;
+    justify-content: center;
+  }
+  .right-a form {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    width: 100%;
+    height: 7vh;
+  }
+  .right-a input {
+    border: none;
+  }
+  .right-a [type=text] {
+    width: 75%;
+    padding: 5%;
+    font-size: 20px;
+  }
+  .right-a [type=submit] {
+    width: 15%;
+    background-color: #ff4800;
+    font-size: 30px;
+  }
+  .right-a h3 {
+    font-size: 28px;
+    font-weight: 700;
   }
 }/*# sourceMappingURL=style.css.map */
