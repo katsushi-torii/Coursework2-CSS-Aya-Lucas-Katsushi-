@@ -15,6 +15,10 @@ main h3{
     font-size: 14px;
 }
 
+p{
+    line-height: 1.5;
+}
+
 a{
     text-decoration: none
 }
@@ -22,6 +26,78 @@ a{
 ul{
     list-style-type: none
 }
+
+// nav{
+//     > section{
+//         display: flex;
+//         > ul{
+//             display: none
+//         }
+//     }
+
+//     > article{
+//         @include columnRow(1vh);
+//         align-items: center;
+//         background-color: $footerColor;
+//         padding-top: 2vh;
+//         padding-bottom: 2vh;
+//         > ul{
+//             display: flex;
+//             column-gap: 3vw
+//         }
+
+//         p,
+//         i,
+//         a{
+//             color: $grayColor;
+//         }
+
+//         p{
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             column-gap: 3vw
+//         }
+//     }
+
+// }
+
+// header{
+//     height: 30vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     > section{
+//         height: 100%;
+//         width: 100%;
+//     }
+
+//     h1{
+//         color: $grayColor;
+//         font-size: 45px;
+//     }
+
+//     aside{
+//         display: flex;
+//         column-gap: 3vw;
+//         justify-content: center;
+//         align-items: center;
+//     }
+    
+//     strong{
+//         background-color: $grayColor;
+//         width: 1.5vh;
+//         height: 1.5vh;
+//         border-radius: 50%;
+//         border: 1px solid $grayColor;
+//     }
+
+//     a{
+//         color: $grayColor;
+//     }
+
+// }
+
 
 .logistic-services{
         @include columnRow(3vh);
@@ -150,7 +226,7 @@ ul{
         > article{
             background-color: rgb(230, 229, 229);
             width: 80%;
-            height: 50vh;
+            height: 55vh;
             @include columnRow(2vh);
             justify-content: center;
             align-items: center;
@@ -200,6 +276,138 @@ ul{
         color: $grayColor;
         width: 35%;
         padding: 2%;
+    }
+
+}
+
+footer{
+    background-color: $footerColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        color: $defaultColor;
+        font-size: 24px;
+    }
+
+    > section{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        width: 80%;
+        @include columnRow(3vh)
+    }
+
+    > article{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+        align-items: center;
+        text-align: center;
+        padding: 3%;
+        border-top: 1px solid $grayColor;
+
+        > p{
+            width: 90%;
+            color: $grayColor;
+        }
+
+        > ul{
+            display: flex;
+            list-style-type: none;
+            column-gap: 8vw;
+        }
+
+        a{
+            color: $grayColor;
+        }
+
+    }
+
+    span{
+        color: $defaultColor;
+    }
+
+    .news,
+    .link,
+    .touch {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    
+}
+
+.touch{
+    > section{
+        > ul{
+            display: flex;
+            column-gap: 8vw;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid $grayColor;
+                border-radius: 50%;
+                width: 4vh;
+                height: 4vh;
+
+            }
+        }
+    }
+
+
+    i,
+    address,
+    a{
+        color: $grayColor;
+    }
+
+    > ul{
+        @include columnRow(2vh);
+        li{
+            display: flex;
+            column-gap: 2vw;
+
+        }
+    }
+}
+
+.link{
+    ul{
+        @include columnRow(3vh);
+        color: $grayColor;
+    }
+
+    li{
+        display: flex;
+        column-gap: 2vw;
+    }
+
+    a{
+        color: $grayColor;
+    }
+}
+
+.news{
+    > section{
+        @include columnRow(2vh);
+    }
+
+    p{
+        color: $grayColor;
+    }
+
+    input{
+        padding: 5%;
+        border: none;
+    }
+
+    [type="submit"]{
+        background-color: $defaultColor;
+        border: none;
+        color: $grayColor;
     }
 
 }
