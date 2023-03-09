@@ -19,6 +19,10 @@ a{
     text-decoration: none
 }
 
+ul{
+    list-style-type: none
+}
+
 .logistic-services{
         @include columnRow(3vh);
         align-items: center;
@@ -127,6 +131,77 @@ a{
 
 }
 
+.packages{
+    text-align: center;
+    @include columnRow(3vh);
+    > article{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 1vh;
+        h2{
+            width: 70%;
+        }
+    }
 
+    > section{
+        @include columnRow(3vh);
+        align-items: center;
+        > article{
+            background-color: rgb(230, 229, 229);
+            width: 80%;
+            height: 50vh;
+            @include columnRow(2vh);
+            justify-content: center;
+            align-items: center;
+
+            > p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $defaultColor;
+                color: $footerColor;
+                font-weight: 600;
+                font-size: 26px;
+                height: 10vh;
+                width: 100%;
+            }
+        }
+
+        
+    }
+    aside{
+        display: flex;
+        align-items: center;
+        column-gap: 1vw;
+        p{
+            font-size: 30px;
+            color: $footerColor;
+            font-weight: 600;
+        }
+
+        strong,
+        small{
+            font-size: 16px;
+            color: gray;
+        }
+    }
+
+    ul{
+        @include columnRow(2vh)
+    }
+
+    li{
+        color: gray;
+    }
+
+    a{
+        background-color: $defaultColor;
+        color: $grayColor;
+        width: 35%;
+        padding: 2%;
+    }
+
+}
 
 }
