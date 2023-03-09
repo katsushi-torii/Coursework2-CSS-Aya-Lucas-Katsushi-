@@ -11,6 +11,7 @@ img {
      .left-a > figure,
      .left-a figcaption,
      .right-a > article,
+     .right-a > section,
      .bottom-a > article
      .bottom-a > section,
      .bottom-a > section > aside,
@@ -24,11 +25,11 @@ img {
 
      .about > section {
           width: 90%;
-          row-gap: 15vh;
+          row-gap: 10vh;
      }
 
      .left-a {
-          row-gap: 7vh;
+          row-gap: 5vh;
 
           > figure > img {
                width: 100%;
@@ -91,7 +92,7 @@ img {
      }
 
      .right-a {
-          row-gap: 10vh;
+          row-gap: 5vh;
 
           > aside {
                background-color: $grayColor;
@@ -125,8 +126,56 @@ img {
 
           h3 {
                font-size: 28px;
-               font-weight: 700;
+               font-weight: 600;
           }
+
+          > article {
+               row-gap: 3vh;
+
+               > ul {
+                    background-color: $grayColor;
+                    padding: 10%;
+                    list-style-type: none;
+                    @include columnRow(0.5vh);
+               }
+
+               li {
+                    background-color: white;
+                    padding: 3%;
+                    display: flex;
+                    justify-content: space-between;
+               }
+
+               strong {
+                    color: $defaultColor;
+               }
+
+               a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 24px;
+               }
+
+               span {
+                    background-color: $grayColor;
+                    padding: 0 3%;
+                    font-weight: bolder;
+               }
+          }
+
+          > section {
+               row-gap: 3vh;
+
+               > article {
+                    @include column-gap(2vh);
+               }
+
+               figure {
+                    background-color: $grayColor;
+               }
+          }
+
+          
      }
 }
 

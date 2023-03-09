@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Kanit", sans-serif;
 }
 
 html {
@@ -53,10 +54,10 @@ img {
   }
   .about > section {
     width: 90%;
-    row-gap: 15vh;
+    row-gap: 10vh;
   }
   .left-a {
-    row-gap: 7vh;
+    row-gap: 5vh;
   }
   .left-a > figure > img {
     width: 100%;
@@ -110,7 +111,7 @@ img {
     font-weight: 700;
   }
   .right-a {
-    row-gap: 10vh;
+    row-gap: 5vh;
   }
   .right-a > aside {
     background-color: #f2f2f4;
@@ -139,6 +140,39 @@ img {
   }
   .right-a h3 {
     font-size: 28px;
-    font-weight: 700;
+    font-weight: 600;
+  }
+  .right-a > article {
+    row-gap: 3vh;
+  }
+  .right-a > article > ul {
+    background-color: #f2f2f4;
+    padding: 10%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5vh;
+  }
+  .right-a > article li {
+    background-color: white;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .right-a > article strong {
+    color: #ff4800;
+  }
+  .right-a > article a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+  }
+  .right-a > article span {
+    background-color: #f2f2f4;
+    padding: 0 3%;
+    font-weight: bolder;
+  }
+  .right-a > section > article {
+    background-color: #f2f2f4;
   }
 }/*# sourceMappingURL=style.css.map */
