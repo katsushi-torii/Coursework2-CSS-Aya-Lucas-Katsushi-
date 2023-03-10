@@ -8,6 +8,7 @@ main{
 
 main h2{
     color: $footerColor;
+    font-size: 30px;
 }
 
 main h3{
@@ -132,12 +133,17 @@ ul{
         justify-content: center;
         align-items: center;
         width: 80%;
-        height: 8vh;
+        height: 12vh;
         column-gap: 3vw;
         background-color: $defaultColor;
         font-size: 20px;
         p{
             color: whitesmoke;
+            font-size: 22px;
+            font-weight: 300;
+        }
+        i{
+            font-size: 26px;
         }
     }
 
@@ -167,7 +173,7 @@ ul{
             @include columnRow(1vh);
 
             > h3{
-                font-size: 24px;
+                font-size: 35px;
             }
         }
 
@@ -203,6 +209,9 @@ ul{
         background-color: $footerColor;
         border: none;
         color: whitesmoke;
+        border: 2px solid $footerColor;
+        font-weight: 500;
+        transition: .6s;
     }
 
 }
@@ -214,6 +223,7 @@ ul{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center;
         row-gap: 1vh;
         h2{
             width: 70%;
@@ -226,7 +236,7 @@ ul{
         > article{
             background-color: rgb(230, 229, 229);
             width: 80%;
-            height: 55vh;
+            height: 65vh;
             @include columnRow(2vh);
             justify-content: center;
             align-items: center;
@@ -276,6 +286,8 @@ ul{
         color: $grayColor;
         width: 35%;
         padding: 2%;
+        border: 2px solid $defaultColor;
+        transition: .6s;
     }
 
 }
@@ -343,8 +355,8 @@ footer{
     > section{
         > ul{
             display: flex;
-            column-gap: 8vw;
-            li{
+            column-gap: 5vw;
+            i{
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -352,7 +364,7 @@ footer{
                 border-radius: 50%;
                 width: 4vh;
                 height: 4vh;
-
+                transition: .6s;
             }
         }
     }
@@ -376,12 +388,13 @@ footer{
 
 .link{
     ul{
-        @include columnRow(3vh);
+        @include columnRow(1vh);
         color: $grayColor;
     }
 
     li{
         display: flex;
+        align-items: center;
         column-gap: 2vw;
     }
 
@@ -395,12 +408,16 @@ footer{
         @include columnRow(2vh);
     }
 
+    form{
+        display: flex;
+    }
+
     p{
         color: $grayColor;
     }
 
     input{
-        padding: 5%;
+        padding: 3%;
         border: none;
     }
 
@@ -408,6 +425,8 @@ footer{
         background-color: $defaultColor;
         border: none;
         color: $grayColor;
+        border: 1px solid $defaultColor;
+        transition: .6s;
     }
 
 }

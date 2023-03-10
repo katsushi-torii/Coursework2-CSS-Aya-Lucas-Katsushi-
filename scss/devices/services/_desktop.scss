@@ -1,0 +1,113 @@
+@media(min-width: $desktopScreen){
+
+    .logistic-services{
+        > section{
+            flex-direction: row;
+            > article{
+                width: 25%;
+            }
+        }
+    }
+
+    .quote{ 
+        > section{
+            flex-direction: row;
+            column-gap: 2vw;
+            width: 90%;
+            padding-top: 0vh;
+            > article{
+                justify-content: center;
+            }
+        }
+        form{
+            width: 80%;
+
+        }
+
+        [type="submit"]:hover{
+            background-color: transparent;
+            color: $footerColor;
+            cursor: pointer;
+        }
+    }
+
+    .packages{
+        > section{
+            justify-content: center;
+            column-gap: 2vw;
+            > article{
+                height: 65vh;
+            }
+        }
+
+        a:hover{
+            background-color: transparent;
+            color: $defaultColor
+        }
+    }
+
+
+    footer{
+        > section{
+            column-gap: 7vw;
+        }
+        > article{
+            flex-direction: row;
+            column-gap: 15vw;
+            padding: 1%;
+            width: 98%;
+            ul{
+                justify-content: center;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .touch{
+        > ul{
+            li{
+                column-gap: 1vw;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .link{
+        width: 80%;
+        ul{
+            li{
+                column-gap: 1vw;
+            }
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+    }
+
+    .news{
+        input{
+            width: 70%;
+        }
+
+        [type="submit"]{
+            width: 30%;
+            
+        }
+
+        [type="submit"]:hover{
+            background-color: transparent;
+            color: $grayColor;
+            cursor: pointer;
+        }
+
+    }
+
+}
