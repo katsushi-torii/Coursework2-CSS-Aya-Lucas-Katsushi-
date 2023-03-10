@@ -396,5 +396,12 @@ img {
 @media (min-width: 1000px) {
   .about > .top-a {
     flex-direction: row;
+    justify-content: space-between;
+  }
+  .left-a {
+    width: 70%;
+  }
+  .right-a {
+    width: 29%;
   }
 }/*# sourceMappingURL=style.css.map */
