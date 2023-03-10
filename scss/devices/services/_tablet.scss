@@ -74,47 +74,4 @@ main h2{
     }
 }
 
-footer{
-    width: 100%;
-    > section{
-        flex-direction: row;
-        column-gap: 4vw;
-        width: 90%;
-    }
-
-    > article{
-        width: 94%;
-        > ul{
-            width: 90%;
-            justify-content: end;
-        }
-
-
-    }
-
-}
-
-.touch{
-    width: 60%;
-    > section{
-        > ul{
-            column-gap: 1vw;
-            
-        }
-    }
-    a:hover i{
-        background-color: $grayColor;
-        color: $footerColor;
-    }
-}
-
-.link{
-    width: 100%;
-    > ul{
-        column-gap: 0vh;
-    }
-}
-
-
-
 }
