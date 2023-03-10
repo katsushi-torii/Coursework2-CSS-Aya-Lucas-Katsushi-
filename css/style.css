@@ -36,8 +36,8 @@ img {
 }
 
 @media (min-width: 300px) {
-  .about,
-  .about > section,
+  .about-a,
+  .about-a > section,
   .left-a,
   .right-a,
   .left-a > figure,
@@ -51,7 +51,7 @@ img {
     display: flex;
     flex-direction: column;
   }
-  .about {
+  .about-a {
     align-items: center;
     row-gap: 10vh;
     padding: 15vh 0;
@@ -409,7 +409,7 @@ img {
   }
 }
 @media (min-width: 700px) {
-  .about {
+  .about-a {
     padding: 10vh 0;
   }
   .top-a {
@@ -564,7 +564,7 @@ img {
   }
 }
 @media (min-width: 1000px) {
-  .about > .top-a {
+  .about-a > .top-a {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -605,7 +605,7 @@ img {
   .right-a blockquote > a {
     width: 40%;
   }
-  .about > .bottom-a {
+  .about-a > .bottom-a {
     flex-direction: row;
     justify-content: space-between;
   }

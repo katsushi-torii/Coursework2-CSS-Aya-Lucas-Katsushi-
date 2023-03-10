@@ -1,6 +1,6 @@
 @media (min-width:$desktopScreen) {
 
-    .about > .top-a {
+    .about-a > .top-a {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -57,7 +57,7 @@
         }
     }
 
-    .about > .bottom-a {
+    .about-a > .bottom-a {
         flex-direction: row;
         justify-content: space-between;
     }

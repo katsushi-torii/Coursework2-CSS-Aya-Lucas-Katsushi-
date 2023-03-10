@@ -4,8 +4,8 @@ img {
 
 @media (min-width:$mobileScreen) {
 
-     .about,
-     .about > section,
+     .about-a,
+     .about-a > section,
      .left-a,
      .right-a,
      .left-a > figure,
@@ -19,7 +19,7 @@ img {
           @include flex-column;
      }
 
-     .about {
+     .about-a {
           align-items: center;
           row-gap: 10vh;
           padding: 15vh 0;
