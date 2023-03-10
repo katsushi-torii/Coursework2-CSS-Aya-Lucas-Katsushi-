@@ -319,7 +319,7 @@ img {
     padding: 3% 5%;
   }
   .right-a [type=text] {
-    width: 80%;
+    width: 90%;
     font-size: 18px;
   }
   .right-a [type=submit] {
@@ -399,9 +399,13 @@ img {
     justify-content: space-between;
   }
   .left-a {
-    width: 70%;
+    width: 67%;
   }
   .right-a {
-    width: 29%;
+    width: 30%;
+  }
+  .right-a form {
+    width: 80%;
+    padding: 10%;
   }
 }/*# sourceMappingURL=style.css.map */
