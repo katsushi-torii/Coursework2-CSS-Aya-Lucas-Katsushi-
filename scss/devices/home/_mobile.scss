@@ -5,7 +5,7 @@
     height: 60vh;
   }
 
-  h6{
+  .home h6{
     color: $defaultColor;
     font-size: 18px;
     text-transform: uppercase;
@@ -14,10 +14,10 @@
     font-size: 28px;
     color: $footerColor;
   }
-  a{
+  .home a{
     text-decoration: none;
   }
-  img{
+  .home img{
     height: 50vh;
   }
 
