@@ -142,7 +142,7 @@ img {
   .right-a [type=submit] {
     width: 15%;
     background-color: #ff4800;
-    font-size: 30px;
+    font-size: 20px;
   }
   .right-a h3 {
     font-size: 28px;
@@ -447,6 +447,10 @@ img {
   }
   .right-a [type=submit] {
     width: 10%;
+    transition: 0.6s;
+  }
+  .right-a [type=submit]:hover {
+    font-size: 30px;
   }
   .right-a > article > ul {
     padding: 5%;

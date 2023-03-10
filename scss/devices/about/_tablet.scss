@@ -52,6 +52,10 @@
 
         [type=submit] {
             width: 10%;
+            transition: .6s;
+            &:hover {
+                font-size: 30px;
+            }
         }
 
         > article {
