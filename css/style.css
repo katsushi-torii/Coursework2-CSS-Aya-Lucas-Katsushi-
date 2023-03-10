@@ -289,6 +289,125 @@ img {
     color: #f2f2f4;
   }
 }
+@media (min-width: 300px) {
+  footer {
+    background-color: #1f1f2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer h3 {
+    color: #ff4800;
+    font-size: 24px;
+  }
+  footer > section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  footer > article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+    border-top: 1px solid #f2f2f4;
+  }
+  footer > article > p {
+    width: 90%;
+    color: #f2f2f4;
+  }
+  footer > article > ul {
+    display: flex;
+    list-style-type: none;
+    -moz-column-gap: 8vw;
+         column-gap: 8vw;
+  }
+  footer > article a {
+    color: #f2f2f4;
+  }
+  footer span {
+    color: #ff4800;
+  }
+  footer .news,
+  footer .link,
+  footer .touch {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .touch > section > ul {
+    display: flex;
+    -moz-column-gap: 5vw;
+         column-gap: 5vw;
+  }
+  .touch > section > ul i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f2f2f4;
+    border-radius: 50%;
+    width: 4vh;
+    height: 4vh;
+    transition: 0.6s;
+  }
+  .touch i,
+  .touch address,
+  .touch a {
+    color: #f2f2f4;
+  }
+  .touch > ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .touch > ul li {
+    display: flex;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+  }
+  .link ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    color: #f2f2f4;
+  }
+  .link li {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 2vw;
+         column-gap: 2vw;
+  }
+  .link a {
+    color: #f2f2f4;
+  }
+  .news > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .news form {
+    display: flex;
+  }
+  .news p {
+    color: #f2f2f4;
+  }
+  .news input {
+    padding: 3%;
+    border: none;
+  }
+  .news [type=submit] {
+    background-color: #ff4800;
+    border: none;
+    color: #f2f2f4;
+    border: 1px solid #ff4800;
+    transition: 0.6s;
+  }
+}
 @media (min-width: 700px) {
   .about {
     padding: 10vh 0;
@@ -408,6 +527,42 @@ img {
     color: #ff4800;
   }
 }
+@media (min-width: 700px) {
+  footer {
+    width: 100%;
+  }
+  footer > section {
+    flex-direction: row;
+    -moz-column-gap: 4vw;
+         column-gap: 4vw;
+    width: 90%;
+  }
+  footer > article {
+    width: 94%;
+  }
+  footer > article > ul {
+    width: 90%;
+    justify-content: end;
+  }
+  .touch {
+    width: 60%;
+  }
+  .touch > section > ul {
+    -moz-column-gap: 1vw;
+         column-gap: 1vw;
+  }
+  .touch a:hover i {
+    background-color: #f2f2f4;
+    color: #1f1f2e;
+  }
+  .link {
+    width: 100%;
+  }
+  .link > ul {
+    -moz-column-gap: 0vh;
+         column-gap: 0vh;
+  }
+}
 @media (min-width: 1000px) {
   .about > .top-a {
     flex-direction: row;
@@ -472,5 +627,52 @@ img {
   }
   .bottom-a [type=submit] {
     width: 25%;
+  }
+}
+@media (min-width: 1000px) {
+  footer > section {
+    -moz-column-gap: 7vw;
+         column-gap: 7vw;
+  }
+  footer > article {
+    flex-direction: row;
+    -moz-column-gap: 15vw;
+         column-gap: 15vw;
+    padding: 1%;
+    width: 98%;
+  }
+  footer > article ul {
+    justify-content: center;
+  }
+  footer > article a:hover {
+    text-decoration: underline;
+  }
+  .touch > ul li {
+    -moz-column-gap: 1vw;
+         column-gap: 1vw;
+  }
+  .touch > ul a:hover {
+    text-decoration: underline;
+  }
+  .link {
+    width: 80%;
+  }
+  .link ul li {
+    -moz-column-gap: 1vw;
+         column-gap: 1vw;
+  }
+  .link a:hover {
+    text-decoration: underline;
+  }
+  .news input {
+    width: 70%;
+  }
+  .news [type=submit] {
+    width: 30%;
+  }
+  .news [type=submit]:hover {
+    background-color: transparent;
+    color: #f2f2f4;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=style.css.map */
