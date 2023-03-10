@@ -289,6 +289,118 @@ img {
     color: #f2f2f4;
   }
 }
+@media (min-width: 300px) {
+  nav > article {
+    background-color: rgb(22, 1, 22);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    align-items: center;
+    padding: 3%;
+  }
+  nav > article aside {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  nav > article p {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  nav > article ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+  }
+  nav > article a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  nav > section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+  }
+  nav > section > a {
+    display: none;
+  }
+  nav > section > ul {
+    display: none;
+  }
+  nav > section aside {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+    color: #ff4800;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  nav details {
+    border: 1px solid gainsboro;
+    padding: 2%;
+    width: 7%;
+    text-align: center;
+    position: absolute;
+  }
+  nav details > ul {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 100%;
+  }
+  nav summary {
+    font-size: 24px;
+    color: gray;
+  }
+  header {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+  }
+  header > section {
+    background-color: rgba(20, 20, 20, 0.8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+  }
+  header aside {
+    display: flex;
+    align-items: center;
+    -moz-column-gap: 1vw;
+         column-gap: 1vw;
+  }
+  header h1 {
+    font-size: 50px;
+  }
+  header strong {
+    color: whitesmoke;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  header a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+  }
+}
 @media (min-width: 700px) {
   .about {
     padding: 10vh 0;
@@ -406,5 +518,84 @@ img {
   .bottom-a [type=submit]:hover {
     background-color: transparent;
     color: #ff4800;
+  }
+}
+@media (min-width: 700px) {
+  header {
+    height: 35vh;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1000px) {
+  .about > .top-a {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .left-a {
+    width: 67%;
+  }
+  .left-a figcaption {
+    row-gap: 1vh;
+  }
+  .left-a img {
+    height: 55vh;
+  }
+  .right-a {
+    width: 30%;
+  }
+  .right-a form {
+    width: 80%;
+    padding: 10%;
+  }
+  .right-a [type=text] {
+    width: 80%;
+  }
+  .right-a [type=submit] {
+    width: 20%;
+  }
+  .right-a > section figure {
+    width: 100%;
+  }
+  .right-a > section li {
+    padding: 1% 5%;
+  }
+  .right-a figure p {
+    font-size: 16px;
+  }
+  .right-a blockquote {
+    padding: 10%;
+  }
+  .right-a blockquote > a {
+    width: 40%;
+  }
+  .about > .bottom-a {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bottom-a > article {
+    width: 37%;
+  }
+  .bottom-a > section {
+    width: 60%;
+  }
+  .bottom-a iframe {
+    height: 65vh;
+  }
+  .bottom-a form {
+    padding: 4%;
+  }
+  .bottom-a input,
+  .bottom-a textarea {
+    padding-left: 3%;
+  }
+  .bottom-a [type=submit] {
+    width: 25%;
+  }
+}
+@media (min-width: 1000px) {
+  header h1 {
+    font-size: 70px;
   }
 }/*# sourceMappingURL=style.css.map */
