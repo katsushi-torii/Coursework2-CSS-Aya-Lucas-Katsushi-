@@ -1,0 +1,64 @@
+@media (min-width: $desktopScreen){
+
+/*about*/
+.about,
+.choose{
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 3vh;
+}
+.about{
+ padding: 0 5% ;
+  > figure{
+    width: 50%;
+  }
+  >article{
+    width: 60%;
+  }
+}
+/*choose*/
+.choose{
+  padding: 0 5%;
+  height: 70vh;
+  >figure{
+    width: 70%;
+    height: 100%;
+    >img{
+      height: 100%;
+    }
+    >article{
+      padding: 5% 0;
+    }
+  }
+}
+/*team*/
+.team{
+  >article{
+    width: 90%;
+    justify-content: space-between;
+  }
+  figure{
+    width: 23%;
+  }
+}
+/*blog*/
+.blog{
+  >article{
+    width: 90%;
+    justify-content: space-between;
+  }
+  figure{
+    width: 48%;
+    >img{
+      height: 40vh;
+    }
+    span{
+      width: 50%;
+    }
+  }
+  aside{
+    width: 25%;
+  }
+}
+
+}

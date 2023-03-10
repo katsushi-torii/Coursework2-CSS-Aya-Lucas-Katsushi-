@@ -1,0 +1,249 @@
+@media (min-width: $mobileScreen){
+
+
+  h6{
+    color: $defaultColor;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .home h2{
+    font-size: 28px;
+    color: $footerColor;
+  }
+  a{
+    text-decoration: none;
+  }
+  img{
+    height: 50vh;
+  }
+
+  /*main*/
+  .home{
+    @include columnRow(10vh);
+    padding: 10vh 0;
+  }
+  /*about*/
+  .about{
+    @include columnRow(3vh);
+    align-items: center;
+    > figure{
+      width: 85%;
+      background-color: $defaultColor;
+
+      > figcaption{
+        display: flex;
+        justify-content: center;
+      }
+    }
+    img{
+      width: 100%;
+      height: 35vh;
+    }
+    h4{
+      padding: 3%;
+      font-size: 24px;
+      color: $footerColor;
+    }
+    > article{
+      width: 85%;
+      @include columnRow(3vh);
+
+    }
+    h2{
+      width:80%;
+    }
+    aside{
+      display: flex;
+      column-gap: 2vh;
+      align-items: center;
+    }
+    span{
+      width: 7vh;
+      height: 7vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $footerColor;
+      background-color: $defaultColor;
+      border-radius: 50%;
+      border: 5px solid #ffab8a;
+    }
+    i{
+      font-size: 20px;
+    }
+    a{
+      font-size: 20px;
+      font-weight: 600;
+      color: $footerColor;
+    }
+  }
+  /*choose*/
+  .choose{
+    background-color: $grayColor;
+    @include columnRow(3vh);
+    align-items: center;
+    padding-bottom: 8vh;
+    >figure,
+    >article{
+      width: 85%;
+    }
+    >article{
+      @include columnRow(3vh);
+      >a{
+        background-color: $defaultColor;
+        color: white;
+        width: 35%;
+        text-align: center;
+        padding: 2%;
+        transition: .6s;
+
+        &:hover{
+          border: 2px solid $defaultColor;
+          color: $defaultColor;
+          background-color: transparent;
+        }
+      }
+    }
+    img{
+      width: 100%;
+      height: 60vh;
+    }
+    h2{
+      width: 70%;
+    }
+    ul{
+      @include columnRow(1vh);
+      list-style-type: none;
+      li{
+        display: flex;
+        align-items: center;
+        column-gap: 1vh;
+      }
+      i{
+        color: $defaultColor;
+      }
+      a{
+        color:$footerColor ;
+        text-transform: capitalize;
+      }
+    }
+  }
+  /*team*/
+  .team,
+  .team > article,
+  .blog,
+  .blog > article{
+    @include columnRow(3vh);
+    align-items: center;
+  }
+  .team > section,
+  .blog > section{
+    width: 70%;
+    text-align: center;
+  }
+  .team{
+    >article{
+      width: 85%;
+      row-gap: 8vh;
+    }
+    figure{
+      @include flex-column;
+      width: 100%;
+      background-color: $grayColor;
+      border-bottom: 4px solid $defaultColor;
+    }
+    img{
+      width: 100%;
+    }
+    figcaption{
+      padding: 3%;
+      @include flex-column;
+      align-items: center;
+
+      h5{
+        font-size: 18px;
+        text-transform: capitalize;
+      }
+      small{
+        color: dimgrey;
+        text-transform: capitalize;
+        padding-bottom: 2%;
+      }
+    }
+    aside{
+      display: none;
+    }
+
+  }
+  /*blog*/
+  .blog{
+    >article{
+      width: 85%;
+      row-gap: 8vh;
+    }
+    figure{
+      width: 100%;
+      background-color: $grayColor;
+      @include flex-column;
+      align-items: center;
+
+      >img{
+        width: 100%;
+        height: 35vh;
+      }
+    }
+    figcaption{
+      width: 85%;
+      padding: 8%;
+      @include columnRow(2vh);
+      img{
+        width: 6vh;
+        height: 6vh;
+        border-radius: 50%;
+      }
+
+      i{
+        font-size: 20px;
+        color: $defaultColor;
+      }
+    }
+    h3{
+      font-size: 20px;
+    }
+    ul{
+      width: 100%;
+      display: flex;
+      list-style-type: none;
+      >li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 2vh;
+      }
+      span{
+        width: 30%;
+        color: dimgray;
+      }
+    }
+    aside{
+      width: 39%;
+      display: flex;
+      align-items: center;
+      column-gap: 1vh;
+      border-bottom: 1px solid $defaultColor;
+      i{
+        font-weight: 600;
+      }
+    }
+    a{
+      color: $defaultColor;
+      text-transform: uppercase;
+      transition: .6s;
+      &:hover{
+        color: $footerColor;
+      }
+    }
+
+
+  }
+}

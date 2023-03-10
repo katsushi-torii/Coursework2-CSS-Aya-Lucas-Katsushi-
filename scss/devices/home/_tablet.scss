@@ -1,0 +1,159 @@
+@media (min-width: $tabletScreen){
+
+
+  h6{
+    font-size: 24px;
+  }
+  .home h2{
+    font-size: 38px;
+  }
+
+  /*about*/
+  .about{
+    img{
+      height: 50vh;
+    }
+    h4{
+      font-size: 28px;
+    }
+    i{
+      font-size: 30px;
+    }
+    span{
+      width: 6vh;
+      height: 6vh;
+    }
+    a{
+      font-size: 26px;
+    }
+  }
+  /*choose*/
+  .choose,
+  .about{
+    h2{
+      width: 90%;
+      font-size: 38px;
+    }
+    p{
+      font-size: 20px;
+    }
+    >article{
+      >a{
+        width: 10vh;
+      }
+    }
+    ul{
+      i{
+        font-size: 20px;
+      }
+      a{
+        font-size: 20px;
+      }
+    }
+  }
+  /*team*/
+  .team{
+    >article{
+      width: 90%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 3vh;
+      justify-content: center;
+    }
+    figure{
+      width: 47%;
+    }
+    img{
+      height: 30vh;
+    }
+    figcaption{
+      position: relative;
+
+      &:hover aside{
+        transition: .6s;
+        height: 100%;
+      }
+
+      aside:hover {
+        > ul {
+          display: flex;
+        }
+      }
+    }
+    aside{
+      display: block;
+      position: absolute;
+      bottom:0;
+      width: 100%;
+      height: 0%;
+      background-color:$defaultColor ;
+    }
+    ul{
+      display: none;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      column-gap: 2vh;
+    }
+    li{
+      display: flex;
+    }
+    a{
+      border: 1px solid $footerColor;
+      border-radius: 50%;
+      width: 5vh;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $footerColor;
+
+      &:hover{
+        transition: .6s;
+        background-color:$footerColor;
+      }
+      &:hover i{
+        color: white;
+        transition: .4s;
+      }
+
+    }
+    i{
+      font-size: 20px;
+    }
+  }
+  /*blog*/
+  .blog{
+    >article{
+      width: 90%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 3vh;
+      justify-content: center;
+    }
+    figure{
+      width: 47%;
+      >img{
+        height: 20vh;
+      }
+    }
+    ul{
+      column-gap: 3vh;
+      img{
+        width: 5vh;
+        height: 5vh;
+      }
+      li{
+        column-gap: 1vh;
+      }
+    }
+    h3{
+      font-size: 24px;
+    }
+    p{
+      font-size: 20px;
+    }
+
+  }
+}
