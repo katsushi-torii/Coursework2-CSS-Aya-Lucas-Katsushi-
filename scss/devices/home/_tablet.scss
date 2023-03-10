@@ -97,6 +97,62 @@
     img{
       height: 30vh;
     }
+    figcaption{
+      position: relative;
+
+      &:hover aside{
+        transition: .6s;
+        height: 100%;
+      }
+
+      aside:hover {
+        > ul {
+          display: flex;
+        }
+      }
+    }
+    aside{
+      display: block;
+      position: absolute;
+      bottom:0;
+      width: 100%;
+      height: 0%;
+      background-color:$defaultColor ;
+    }
+    ul{
+      display: none;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      column-gap: 2vh;
+    }
+    li{
+      display: flex;
+    }
+    a{
+      border: 1px solid $footerColor;
+      border-radius: 50%;
+      width: 5vh;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $footerColor;
+
+      &:hover{
+        transition: .6s;
+        background-color:$footerColor;
+      }
+      &:hover i{
+        color: white;
+        transition: .4s;
+      }
+
+    }
+    i{
+      font-size: 20px;
+    }
   }
   /*blog*/
   .blog{
