@@ -70,14 +70,17 @@
   h3{
     font-size: 50px;
   }
+
+  h1 {
+    font-size: 90px;
+  }
+
   [type="text"]{
-    width: 35vh;
+    width: 30%;
   }
   [type="submit"]{
-    width: 20vh;
+    width: 15%;
   }
-  input{
-    padding: 1%;
-  }
+
   }
   }

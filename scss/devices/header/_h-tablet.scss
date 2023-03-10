@@ -43,7 +43,10 @@
         font-size: 55px;
       }
       [type="text"]{
-        width: 30vh;
+        width: 50%;
+      }
+      [type="submit"]{
+        width: 25%;
       }
       input{
         font-size: 20px;

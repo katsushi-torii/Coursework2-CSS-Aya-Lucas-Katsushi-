@@ -9,10 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body > main {
-  padding-top: 15%;
-}
-
 p {
   line-height: 1.5;
   color: gray;
@@ -36,6 +32,9 @@ header > section {
 }
 
 @media (min-width: 300px) {
+  .headerhome {
+    height: 60vh;
+  }
   h6 {
     color: #ff4800;
     font-size: 18px;
@@ -986,11 +985,7 @@ img {
   }
   /*header*/
   header {
-    min-height: 30vh;
-  }
-  header > section {
-    min-height: 30vh;
-    padding: 10% 0;
+    height: 40vh;
   }
   header article {
     width: 100%;
@@ -1036,20 +1031,22 @@ img {
     justify-content: center;
   }
   header input {
-    width: 100%;
-    padding: 3%;
+    width: 94%;
+    height: 7vh;
     border: none;
+    font-size: 16px;
+    padding: 0 3%;
   }
   header [type=text] {
     background-color: white;
     color: #f2f2f4;
-    width: 25vh;
+    width: 58%;
   }
   header [type=submit] {
     background-color: #ff4800;
     color: white;
     transition: 0.6s;
-    width: 15vh;
+    width: 28%;
   }
   header [type=submit]:hover {
     border: 2px solid #ff4800;
@@ -1467,7 +1464,10 @@ img {
     font-size: 55px;
   }
   header [type=text] {
-    width: 30vh;
+    width: 50%;
+  }
+  header [type=submit] {
+    width: 25%;
   }
   header input {
     font-size: 20px;
@@ -1752,13 +1752,13 @@ img {
   header h3 {
     font-size: 50px;
   }
+  header h1 {
+    font-size: 90px;
+  }
   header [type=text] {
-    width: 35vh;
+    width: 30%;
   }
   header [type=submit] {
-    width: 20vh;
-  }
-  header input {
-    padding: 1%;
+    width: 15%;
   }
 }/*# sourceMappingURL=style.css.map */
