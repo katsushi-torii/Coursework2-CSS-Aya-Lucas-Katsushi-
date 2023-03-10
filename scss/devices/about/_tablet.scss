@@ -31,6 +31,11 @@
             a {
                 font-size: 16px;
             }
+
+            a:hover {
+               font-weight: bold; 
+               color: crimson;
+            }
         }
     }
 
@@ -61,6 +66,10 @@
 
             a {
                 font-size: 20px;
+            }
+
+            a:hover {
+                text-decoration: underline;
             }
         }
 
@@ -102,6 +111,11 @@
                 width: 25%;
                 padding: 2% 0;
                 font-size: 16px;
+            }
+
+            > a:hover {
+                background-color: transparent;
+                color: $defaultColor;
             }
        }
     }
@@ -147,6 +161,11 @@
 
         [type=submit] {
             width: 30%;
+        }
+
+        [type=submit]:hover {
+            background-color: transparent;
+            color: $defaultColor;
         }
 
     }

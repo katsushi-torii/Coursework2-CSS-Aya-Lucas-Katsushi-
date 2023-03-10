@@ -7,6 +7,14 @@
 
     .left-a {
         width: 67%;
+
+        figcaption {
+            row-gap: 1vh;
+        }
+
+        img {
+            height: 55vh;
+        }
     }
 
     .right-a {
@@ -15,6 +23,70 @@
         form {
             width: 80%;
             padding: 10%;
+        }
+
+        [type=text] {
+            width: 80%;
+        }
+
+        [type=submit] {
+            width: 20%;
+        }
+
+
+        > section {
+            figure {
+                width: 100%;
+            }
+
+            li {
+                padding: 1% 5%;
+            }
+        }
+
+        figure p {
+            font-size: 16px;
+        } 
+
+        blockquote {
+            padding: 10%;
+
+            > a {
+                width: 40%;
+            }
+        }
+    }
+
+    .about > .bottom-a {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .bottom-a {
+        
+        > article {
+            width: 37%;
+        }
+
+        > section {
+            width: 60%;
+        }
+
+        iframe {
+            height: 65vh;
+        }
+
+        form {
+            padding: 4%;
+        }
+
+        input,
+        textarea {
+            padding-left: 3%;
+        }
+
+        [type=submit] {
+            width: 25%;
         }
     }
 

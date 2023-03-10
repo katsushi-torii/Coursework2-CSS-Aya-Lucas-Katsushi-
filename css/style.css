@@ -315,6 +315,10 @@ img {
   .left-a figcaption a {
     font-size: 16px;
   }
+  .left-a figcaption a:hover {
+    font-weight: bold;
+    color: crimson;
+  }
   .right-a form {
     padding: 3% 5%;
   }
@@ -333,6 +337,9 @@ img {
   }
   .right-a > article a {
     font-size: 20px;
+  }
+  .right-a > article a:hover {
+    text-decoration: underline;
   }
   .right-a > section figure {
     width: 70%;
@@ -361,6 +368,10 @@ img {
     width: 25%;
     padding: 2% 0;
     font-size: 16px;
+  }
+  .right-a blockquote > a:hover {
+    background-color: transparent;
+    color: #ff4800;
   }
   .bottom-a > article > aside {
     padding: 3% 0;
@@ -392,6 +403,10 @@ img {
   .bottom-a [type=submit] {
     width: 30%;
   }
+  .bottom-a [type=submit]:hover {
+    background-color: transparent;
+    color: #ff4800;
+  }
 }
 @media (min-width: 1000px) {
   .about > .top-a {
@@ -401,11 +416,61 @@ img {
   .left-a {
     width: 67%;
   }
+  .left-a figcaption {
+    row-gap: 1vh;
+  }
+  .left-a img {
+    height: 55vh;
+  }
   .right-a {
     width: 30%;
   }
   .right-a form {
     width: 80%;
     padding: 10%;
+  }
+  .right-a [type=text] {
+    width: 80%;
+  }
+  .right-a [type=submit] {
+    width: 20%;
+  }
+  .right-a > section figure {
+    width: 100%;
+  }
+  .right-a > section li {
+    padding: 1% 5%;
+  }
+  .right-a figure p {
+    font-size: 16px;
+  }
+  .right-a blockquote {
+    padding: 10%;
+  }
+  .right-a blockquote > a {
+    width: 40%;
+  }
+  .about > .bottom-a {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .bottom-a > article {
+    width: 37%;
+  }
+  .bottom-a > section {
+    width: 60%;
+  }
+  .bottom-a iframe {
+    height: 65vh;
+  }
+  .bottom-a form {
+    padding: 4%;
+  }
+  .bottom-a input,
+  .bottom-a textarea {
+    padding-left: 3%;
+  }
+  .bottom-a [type=submit] {
+    width: 25%;
   }
 }/*# sourceMappingURL=style.css.map */
