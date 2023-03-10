@@ -8,58 +8,6 @@
     font-size: 38px;
   }
 
-  /*header-top*/
-  .header-top{
-    p{
-      font-size: 18px;
-    }
-    ul{
-      width: 30%;
-    }
-    a{
-      font-size: 20px;
-    }
-  }
-  /*navigation*/
-  nav{
-    width: 100%;
-    padding:0;
-    i{
-      font-size: 35px;
-    }
-    h2{
-      font-size: 34px;
-    }
-    details{
-      width: 100%;
-      a{
-        font-size: 24px;
-      }
-    }
-    summary{
-      font-size: 20px;
-    }
-  }
-
-
-  /*header*/
-  header{
-    height: 40vh;
-    h3{
-      font-size: 40px;
-    }
-    h1{
-      width: 100%;
-      font-size: 55px;
-    }
-    [type="text"]{
-      width: 30vh;
-    }
-    input{
-      font-size: 20px;
-    }
-
-  }
   /*about*/
   .about{
     img{
@@ -208,38 +156,4 @@
     }
 
   }
-  /*footer*/
-  footer > section{
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .touch{
-    width: 20%;
-  }
-  .link{
-    width: 20%;
-    ul{
-      row-gap: 1vh;
-    }
-  }
-  .news{
-    width: 47%;
-  }
-  footer > article{
-    row-gap: 1vh;
-    p{
-      text-align: left;
-    }
-    ul{
-      width: 100%;
-      justify-content: flex-end;
-      column-gap: 2vh;
-
-    }
-  }
-
-
-
-
-
 }
