@@ -1,11 +1,16 @@
 @media (min-width: $desktopScreen){
   /*header-top*/
   .header-top{
-    width: 100%;
+    width: 96%;
     flex-direction: row;
     justify-content: space-between;
     >section{
       width: 100%;
+    }
+
+    >article {
+      display: flex;
+      justify-content: flex-end;
     }
   }
   /*navigation*/
@@ -34,7 +39,7 @@
       justify-content: space-between;
       width: 30%;
       height: 100%;
-
+  
       li{
         display: flex;
         width: 100%;
@@ -55,10 +60,10 @@
           color: white;
         }
       }
-
+  
     }
   }
-
+  
   /*header*/
   header{
   height: 50vh;
