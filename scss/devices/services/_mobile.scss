@@ -1,0 +1,222 @@
+@media(min-width: $mobileScreen){
+
+main{
+    @include columnRow(10vh);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+main h2{
+    color: $footerColor;
+    font-size: 30px;
+}
+
+main h3{
+    color: $defaultColor;
+    font-size: 14px;
+}
+
+p{
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none
+}
+
+ul{
+    list-style-type: none
+}
+
+.logistic-services{
+        @include columnRow(3vh);
+        align-items: center;
+        text-align: center;
+    > article{
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 1vh;
+        
+    }
+    > section{
+        @include columnRow(3vh);
+        > article{
+            @include columnRow(2vh);
+            align-items: center;
+            > p{
+                // border: 1px solid red;
+                width: 80%;
+            }
+        }
+
+        a{
+            color: $defaultColor;
+            border-bottom: 1px solid lightgray;
+        }
+        
+    }
+
+    aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 12vh;
+        column-gap: 3vw;
+        background-color: $defaultColor;
+        font-size: 20px;
+        p{
+            color: whitesmoke;
+            font-size: 22px;
+            font-weight: 300;
+        }
+        i{
+            font-size: 26px;
+        }
+    }
+
+}
+
+.quote{
+    background-color: rgb(230, 229, 229);
+    @include flex-column;
+    align-items: center;
+    > section{
+        padding-top: 5vh;
+        @include columnRow(8vh);
+        width: 80%;
+    }
+
+    article{
+        @include columnRow(4vh);
+        > blockquote{
+            @include columnRow(1vh);
+        }
+
+        > section{
+            @include columnRow(2vh)
+        }
+
+        aside{
+            @include columnRow(1vh);
+
+            > h3{
+                font-size: 35px;
+            }
+        }
+
+        small{
+            color: $footerColor;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    form{
+        background-color: $defaultColor;
+        @include columnRow(1vh);
+        align-items: center;
+        justify-content: center;
+        height: 45vh;
+    }
+
+    input{
+        width: 80%;
+        padding: 3%;
+    }
+
+    select{
+        background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+        appearance: none;
+        width: 87%;
+        padding: 3%;
+        background-color: white;
+    }
+
+    [type="submit"]{
+        width: 87%;
+        background-color: $footerColor;
+        border: none;
+        color: whitesmoke;
+        border: 2px solid $footerColor;
+        font-weight: 500;
+        transition: .6s;
+    }
+
+}
+
+.packages{
+    text-align: center;
+    @include columnRow(3vh);
+    > article{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1vh;
+        h2{
+            width: 70%;
+        }
+    }
+
+    > section{
+        @include columnRow(3vh);
+        align-items: center;
+        > article{
+            background-color: rgb(230, 229, 229);
+            width: 80%;
+            height: 65vh;
+            @include columnRow(2vh);
+            justify-content: center;
+            align-items: center;
+
+            > p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $defaultColor;
+                color: $footerColor;
+                font-weight: 600;
+                font-size: 26px;
+                height: 10vh;
+                width: 100%;
+            }
+        }
+
+        
+    }
+    aside{
+        display: flex;
+        align-items: center;
+        column-gap: 1vw;
+        p{
+            font-size: 30px;
+            color: $footerColor;
+            font-weight: 600;
+        }
+
+        strong,
+        small{
+            font-size: 16px;
+            color: gray;
+        }
+    }
+
+    ul{
+        @include columnRow(2vh)
+    }
+
+    li{
+        color: gray;
+    }
+
+    a{
+        background-color: $defaultColor;
+        color: $grayColor;
+        width: 35%;
+        padding: 2%;
+        border: 2px solid $defaultColor;
+        transition: .6s;
+    }
+
+}
+}

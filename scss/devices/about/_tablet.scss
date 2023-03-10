@@ -1,0 +1,176 @@
+@media (min-width:$tabletScreen) {
+
+    .about-a {
+        padding: 10vh 0;
+    }
+
+    .top-a {
+        width: 80%;
+    }
+
+    .left-a {
+
+        figcaption {
+            padding: 5%;
+            align-items: flex-start;
+
+            > figure {
+                width: 70%;
+                justify-content: flex-start;
+                column-gap: 2vh;
+            }
+
+            h4 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            a {
+                font-size: 16px;
+            }
+
+            a:hover {
+               font-weight: bold; 
+               color: crimson;
+            }
+        }
+    }
+
+    .right-a {
+
+        form {
+            padding: 3% 5%;
+        }
+
+        [type=text] {
+            width: 90%;
+            font-size: 18px;
+        }
+
+        [type=submit] {
+            width: 10%;
+            transition: .6s;
+            &:hover {
+                font-size: 30px;
+            }
+        }
+
+        > article {
+
+            > ul {
+                padding: 5%;
+            }
+
+            li {
+                padding: 1%;
+            }
+
+            a {
+                font-size: 20px;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        > section {
+
+            figure {
+                width: 70%;
+                height: 7vh;
+            }
+
+            li {
+                font-size: 16px;
+                padding: 1% 2%;
+            }
+        }
+
+        figure {
+            > img {
+                 width: 20%;
+            }
+
+            p {
+                 font-size: 14px;
+            }
+       }
+
+       > figure > img {
+            width: 100%;
+       }
+
+       blockquote {
+            padding: 5%;
+
+            > p {
+                font-size: 16px;
+            }
+
+            > a {
+                width: 25%;
+                padding: 2% 0;
+                font-size: 16px;
+            }
+
+            > a:hover {
+                background-color: transparent;
+                color: $defaultColor;
+            }
+       }
+    }
+
+    .bottom-a {
+
+        > article {
+             > aside {
+                padding: 3% 0;
+                font-size: 24px;
+             }
+        }
+
+        span {
+            font-weight: 500;
+        }
+
+        iframe {
+            height: 40vh;
+        }
+
+        strong {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        form {
+            padding: 5%;
+        }
+
+        input,
+        textarea {
+            padding: 3% 0 3% 5%;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 8vh;
+        }
+
+        [type=submit] {
+            width: 30%;
+        }
+
+        [type=submit]:hover {
+            background-color: transparent;
+            color: $defaultColor;
+        }
+
+    }
+}

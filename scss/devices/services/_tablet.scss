@@ -1,0 +1,77 @@
+@media(min-width: $tabletScreen){
+   
+main h2{
+    color: $footerColor;
+    font-size: 36px;
+}
+
+.logistic-services{
+    > section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        > article{
+            width: 50%;
+        }
+        aside{
+            width: 90%;
+            height: 12vh;
+            column-gap: 1vw;
+        }
+    }
+
+}
+
+
+.quote{
+    > section{
+        width: 90%;
+        section{
+            flex-direction: row;
+            column-gap: 13vw;
+        }
+
+    }
+
+    form{
+        @include columnRow(3vh);
+        height: 70vh;
+    }
+
+    [type="submit"]:hover{
+        background-color: transparent;
+        color: $footerColor;
+        cursor: pointer;
+    }
+
+}
+
+.packages{
+    align-items: center;
+    > article{
+        width: 100%;
+    }
+    > section{
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 4vw;
+        > article{
+            width: 33%;
+        }
+    }
+
+    a{
+        width: 45%;
+    }
+
+    aside{
+        p{
+            font-size: 40px;
+        }
+    }
+}
+
+}
