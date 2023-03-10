@@ -1,0 +1,138 @@
+@media (min-width: $mobileScreen){
+  /*header-top*/
+  .header-top{
+    background-color: $footerColor;
+    @include columnRow(1vh);
+    align-items: center;
+    padding: 2%;
+    p,i,a{
+      color: whitesmoke;
+    }
+    a:hover{
+      transition: .6s;
+      color: lightblue;
+    }
+    article{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    ul{
+      width: 50%;
+      display: flex;
+    }
+    li{
+      width: 100%;
+      display: flex;
+    }
+  }
+  /*navigation*/
+  nav{
+    width: 95%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 8vh;
+    padding-left: 2vh;
+    >ul,
+    >a{
+      display: none;
+    }
+    >section{
+      display: flex;
+      align-items: center;
+      padding-left: 2%;
+    }
+    i{
+      font-size: 24px;
+      padding-right: 5%;
+      color: $defaultColor;
+    }
+    h2{
+      text-transform: uppercase;
+      color: $defaultColor;
+    }
+    details{
+      position: absolute;
+      width: 94%;
+      text-align: right;
+      >ul{
+        width: 100%;
+        position: absolute;
+        list-style-type: none;
+        background-color: white;
+        width: 100%;
+        @include flex-column;
+        text-align: left;
+      }
+      li{
+        width: 100%;
+        display: flex;
+      }
+      a{
+        height: 100%;
+        width: 100%;
+        padding: 2%;
+        color: dimgrey;
+        text-transform: capitalize;
+        &:hover{
+          background-color: $defaultColor;
+            color: white;
+        }
+      }
+    }
+    summary{
+      border: 1px solid lightgray;
+      padding: 2%;
+      color: dimgrey;
+    }
+  }
+  /*header*/
+  header{
+    height: 60vh;
+    article{
+      width: 100%;
+      @include columnRow(3vh);
+      align-items: center;
+
+    }
+    h3{
+      font-size: 30px;
+      color: $defaultColor;
+    }
+    h1{
+      width: 50%;
+      font-size: 36px;
+      font-weight: 800;
+      text-align: center;
+    }
+    form{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    input{
+      width: 100%;
+      padding: 3%;
+      border: none;
+    }
+    [type="text"]{
+      background-color:white;
+      color: $grayColor;
+      width: 25vh;
+    }
+    [type="submit"]{
+      background-color: $defaultColor;
+      color: white;
+      transition: .6s;
+      width: 15vh;
+      &:hover{
+        border: 2px solid $defaultColor;
+        background-color: transparent;
+      }
+    }
+
+  }
+  }
