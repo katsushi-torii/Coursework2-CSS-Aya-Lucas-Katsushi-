@@ -45,14 +45,14 @@
   }
   /*navigation*/
   nav{
-    padding-left: 3%;
-    width: 100%;
+    width: 95%;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     height: 8vh;
+    padding-left: 2vh;
     >ul,
     >a{
       display: none;
@@ -72,9 +72,8 @@
       color: $defaultColor;
     }
     details{
-      border: 1px solid red;
+      width: 94%;
       position: absolute;
-      width: 95%;
       text-align: right;
       >ul{
         width: 100%;
@@ -82,7 +81,8 @@
         list-style-type: none;
         background-color: white;
         width: 100%;
-        @include columnRow(1vh);
+        @include flex-column;
+        text-align: left;
       }
       li{
         width: 100%;
@@ -90,7 +90,15 @@
       }
       a{
         width: 100%;
+        height: 100%;
         padding: 2%;
+        color: dimgrey;
+        text-transform: capitalize;
+        &:hover{
+          background-color: $defaultColor;
+          color: white;
+
+        }
       }
     }
     summary{
